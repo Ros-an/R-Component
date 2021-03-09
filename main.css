@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 3px;
+  height: 95vh;
+}
+.container > div {
+  background: rgb(219, 219, 255);
+}
