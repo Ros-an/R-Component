@@ -1,12 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rajdhani:wght@400;700&display=swap");
+
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
+
+/*------------color-variable------------------ */
+:root {
+  --primary: #1e212d;
+  --second: #a4ebf3;
+  --third: #e4fbff;
+  --fourth: #157b86;
+}
+
 .container {
+  height: 100vh;
   display: grid;
-  grid-gap: 3px;
+  grid-gap: 5px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 100px auto;
   grid-template-areas:
@@ -15,27 +30,72 @@ body {
 }
 .header {
   grid-area: h;
-  background: #1e212d;
-  color: #a4ebf3;
+  background: var(--primary);
+  color: var(--second);
+  font-family: "Rajdhani", sans-serif;
 }
+
 .nav {
   grid-area: n;
-  background-color: #a4ebf3;
+  background-color: var(--second);
 }
 .content {
   grid-area: c;
-  background: #e4fbff;
+  background: var(--third);
+}
+/* ---------------HEADING------------------ */
+
+.container > .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header > .heading {
+  font-size: 3rem;
+  padding-left: 2rem;
+}
+/*------------- NAV - ITEM ----------------- */
+.nav > .nav-list {
+  list-style: none;
+}
+.nav-component > .component {
+  color: var(--fourth);
+}
+.nav-component > hr {
+  border: 1px solid var(--third);
+}
+.nav .nav-list__levelOne {
+  list-style-type: square;
 }
 
-@media screen and (max-width: 450px) {
+.nav-list__levelOne > li > a {
+  text-decoration: none;
+  color: var(--fourth);
+}
+.nav .nav-list__levelOne > li {
+  padding: 0.15rem 0;
+  /* font-size: 1.2vw; */
+}
+.nav-list__levelOne > li > a:hover,
+.nav-list__levelOne > li > a:active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* --------Media Q small screen----------------- */
+@media screen and (max-width: 680px) {
   .container {
     display: grid;
-    grid-gap: 3px;
+    grid-gap: 5px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px auto auto;
+    grid-template-rows: 80px auto auto;
     grid-template-areas:
       "h h h h h h h h h h h h"
       "n n n n n n n n n n n n"
       "c c c c c c c c c c c c";
+  }
+  .header > .heading {
+    font-size: 2rem;
+    padding-left: 1rem;
   }
 }
