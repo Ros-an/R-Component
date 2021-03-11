@@ -9,6 +9,7 @@
 /* ----Component Design----- */
 @import url("component/avatar.css");
 @import url("component/alert.css");
+@import url("component/badge.on.avatar.css");
 
 * {
   box-sizing: border-box;
@@ -56,6 +57,13 @@ body {
   grid-area: c;
   background: var(--third);
 }
+
+/*----------------Badge-component--------------*/
+.content .component-item--list .badge {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 /* --------Media Q small screen----------------- */
 @media screen and (max-width: 670px) {
   .container {
