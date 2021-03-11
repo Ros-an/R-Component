@@ -12,6 +12,13 @@
   font-size: 3rem;
   padding-left: 2rem;
 }
+
+/* ----------------------------------------- */
+.nav .nav-list {
+  position: sticky;
+  top: 110px; /*header ht size: 100 */
+}
+
 /*------------- NAV - ITEM ----------------- */
 .nav > .nav-list {
   list-style: none;
