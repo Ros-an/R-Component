@@ -2,6 +2,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rajdhani:wght@400;700&display=swap");
 
+/* -------Grid Content Design------- */
+@import url("component/nav-style.css");
+@import url("component/content-style.css");
+
+/* ----Component Design----- */
+@import url("component/avatar.css");
+@import url("component/alert.css");
+
 * {
   box-sizing: border-box;
 }
@@ -43,47 +51,8 @@ body {
   grid-area: c;
   background: var(--third);
 }
-/* ---------------HEADING------------------ */
-
-.container > .header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.header > .heading {
-  font-size: 3rem;
-  padding-left: 2rem;
-}
-/*------------- NAV - ITEM ----------------- */
-.nav > .nav-list {
-  list-style: none;
-}
-.nav-component > .component {
-  color: var(--fourth);
-}
-.nav-component > hr {
-  border: 1px solid var(--third);
-}
-.nav .nav-list__levelOne {
-  list-style-type: square;
-}
-
-.nav-list__levelOne > li > a {
-  text-decoration: none;
-  color: var(--fourth);
-}
-.nav .nav-list__levelOne > li {
-  padding: 0.15rem 0;
-  /* font-size: 1.2vw; */
-}
-.nav-list__levelOne > li > a:hover,
-.nav-list__levelOne > li > a:active {
-  color: var(--primary);
-  font-weight: 600;
-}
-
 /* --------Media Q small screen----------------- */
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 670px) {
   .container {
     display: grid;
     grid-gap: 5px;
@@ -97,5 +66,9 @@ body {
   .header > .heading {
     font-size: 2rem;
     padding-left: 1rem;
+  }
+  .nav,
+  .content {
+    border-radius: 0;
   }
 }
