@@ -1,0 +1,29 @@
+.badge {
+  height: auto;
+  width: auto;
+  position: relative;
+}
+.badge-status {
+  position: absolute;
+  right: 14.64%;
+  bottom: 14.64%;
+  transform: translate(50%, 50%);
+  /*  (x-axis(from left), y-axis(from top))  */
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.15rem #fff;
+}
+
+.badge > .online {
+  background: #90eea8;
+}
+
+.badge > .offline {
+  background: gray;
+}
+
+.badge > .avatar-default + .badge-status {
+  width: 0.5rem;
+  height: 0.5rem;
+}
