@@ -1,0 +1,27 @@
+.avatar-xl {
+  width: 64px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.avatar-lg {
+  width: 48px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.avatar-default {
+  width: 32px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.avatar-sm {
+  width: 24px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.avatar-xs {
+  width: 16px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
