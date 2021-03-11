@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>R-Component</title>
+
     <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="favicon.ico type=" image/x-icon" />
   </head>
+
   <body>
     <div class="container">
       <div class="header">
@@ -34,12 +37,36 @@
               <li><a href="#">Slider(NA)</a></li>
               <li><a href="#">Simplified Grid</a></li>
               <li><a href="#">Text Utilities</a></li>
-              <li><a href="#">Toast /Notify /Snackbar</a></li>
+              <li><a href="#">Toast /Snackbar</a></li>
             </ul>
           </li>
         </ul>
       </div>
-      <div class="content">CONTENT</div>
+      <div class="content">
+        <div class="avatar-section component-item">
+          <h2>Avatar Design</h2>
+          <img src="https://picsum.photos/200" alt="avatar" class="avatar-xl" />
+          <img src="https://picsum.photos/200" alt="avatar" class="avatar-lg" />
+          <img
+            src="https://picsum.photos/200"
+            alt="avatar"
+            class="avatar-default"
+          />
+          <img src="https://picsum.photos/200" alt="avatar" class="avatar-sm" />
+          <img src="https://picsum.photos/200" alt="avatar" class="avatar-xs" />
+        </div>
+        <div class="alert-section component-item">
+          <h2>Alert</h2>
+          <div class="alert">
+            Simple <b>Alert!</b> - check it out!
+            <hr class="alert-hr" />
+            <p>message to user!!</p>
+            <button class="alert__remove--btn">
+              <span>X</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./main.js" type="text/javascript"></script>
