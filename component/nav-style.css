@@ -1,0 +1,43 @@
+/* ---------------HEADING------------------ */
+.nav {
+  border-radius: 0 10px 10px 0;
+  /* border: 2px solid var(--primary); */
+}
+.container > .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header > .heading {
+  font-size: 3rem;
+  padding-left: 2rem;
+}
+/*------------- NAV - ITEM ----------------- */
+.nav > .nav-list {
+  list-style: none;
+}
+.nav-component > .component {
+  color: var(--fourth);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.nav-component > hr {
+  border: 1px solid var(--third);
+}
+.nav .nav-list__levelOne {
+  list-style-type: square;
+}
+
+.nav-list__levelOne > li > a {
+  text-decoration: none;
+  color: var(--fourth);
+}
+.nav .nav-list__levelOne > li {
+  padding: 0.15rem 0;
+  /* font-size: 1.2vw; */
+}
+.nav-list__levelOne > li > a:hover,
+.nav-list__levelOne > li > a:active {
+  color: var(--primary);
+  font-weight: 600;
+}
