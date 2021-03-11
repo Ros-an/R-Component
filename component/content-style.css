@@ -10,7 +10,8 @@
   margin-bottom: 10vw;
 }
 
-.content h2 {
+.content > .component-item h2,
+.content > .component-item h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
