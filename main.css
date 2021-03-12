@@ -10,6 +10,7 @@
 @import url("component/avatar.css");
 @import url("component/alert.css");
 @import url("component/badge.on.avatar.css");
+@import url("component/badge.on.icon.css");
 
 * {
   box-sizing: border-box;
@@ -56,12 +57,6 @@ body {
 .content {
   grid-area: c;
   background: var(--third);
-}
-
-/*----------------Badge-component--------------*/
-.content .component-item--list .badge {
-  display: inline-block;
-  margin-right: 10px;
 }
 
 /* --------Media Q small screen----------------- */
