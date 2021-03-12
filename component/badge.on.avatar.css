@@ -1,9 +1,8 @@
-.badge {
-  height: auto;
-  width: auto;
+.badge-avatar {
+  display: inline-block;
   position: relative;
 }
-.badge-status {
+.badge-avatar--status {
   position: absolute;
   right: 14.64%;
   bottom: 14.64%;
@@ -15,15 +14,15 @@
   box-shadow: 0 0 0 0.15rem #fff;
 }
 
-.badge > .online {
+.badge-avatar > .online {
   background: #90eea8;
 }
 
-.badge > .offline {
+.badge-avatar > .offline {
   background: gray;
 }
 
-.badge > .avatar-default + .badge-status {
+.badge-avatar > .avatar-default + .badge-avatar--status {
   width: 0.5rem;
   height: 0.5rem;
 }
