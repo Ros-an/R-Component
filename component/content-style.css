@@ -15,3 +15,10 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
+
+/*----------------Badge-component--------------*/
+.content .component-item--list .badge-icon,
+.content .component-item--list .badge-avatar {
+  /* display: inline-block; */
+  margin-right: 10px;
+}
