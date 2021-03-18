@@ -1,8 +1,11 @@
-/* ---------------HEADING------------------ */
 .nav {
   border-radius: 0 10px 10px 0;
   /* border: 2px solid var(--primary); */
 }
+
+
+/* ---------------HEADING------------------ */
+
 .container > .header {
   display: flex;
   justify-content: flex-start;
@@ -10,13 +13,25 @@
 }
 .header > .heading {
   font-size: 3rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
+  color: white;
+}
+
+.header > .header-logo{
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  border: 2px solid orange;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+  color: var(--primary);
+  background: white;
+  box-shadow: 0px 0px 2px 2px white;
 }
 
 /* ----------------------------------------- */
 .nav .nav-list {
   position: sticky;
-  top: 110px; /*header ht size: 100 */
+  top: 10px; /*header ht size: 100*/ 
 }
 
 /*------------- NAV - ITEM ----------------- */
@@ -27,6 +42,7 @@
   color: var(--fourth);
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size: 1.25rem;
 }
 .nav-component > hr {
   border: 1px solid var(--third);
