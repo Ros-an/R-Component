@@ -1,133 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>R-Component</title>
-    <!-- link to favicon -->
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-    <!-- link to fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-    <!-- link to main.css -->
-    <link rel="stylesheet" href="main.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="header-logo"><i class="fas fa-book-reader"></i></div>
-        <div class="heading"><span>R-Component</span></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R-Component</title>
+  <!-- link to favicon -->
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <!-- link to fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- link to main.css -->
+  <link rel="stylesheet" href="main.css" />
+</head>
 
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-logo"><i class="fas fa-book-reader"></i></div>
+      <div class="heading"><span>R-Component</span></div>
+
+    </div>
+    <div class="nav">
+      <ul class="nav-list">
+        <li class="nav-component">
+          <h3 class="component">Components</h3>
+          <hr />
+        </li>
+        <li>
+          <ul class="nav-list__levelOne">
+            <li><a href="#">Avatar</a></li>
+            <li><a href="#">Alert</a></li>
+            <li><a href="#">Badge</a></li>
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Card</a></li>
+            <li><a href="#">Image</a></li>
+            <li><a href="#">Input</a></li>
+            <li><a href="#">Lists</a></li>
+            <li><a href="#">Navigation</a></li>
+            <li><a href="#">Modal</a></li>
+            <li><a href="#">Rating</a></li>
+            <li><a href="#">Slider(NA)</a></li>
+            <li><a href="#">Simplified Grid</a></li>
+            <li><a href="#">Text Utilities</a></li>
+            <li><a href="#">Toast /Snackbar</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="component-item">
+        <h2>Avatar Design</h2>
+        <div class="component-item__block">
+          <div class="item__block">
+            <img src="https://picsum.photos/200" alt="avatar" class="avatar-xl" />
+            <img src="https://picsum.photos/200" alt="avatar" class="avatar-lg" />
+            <img src="https://picsum.photos/200" alt="avatar" class="avatar-default" />
+            <img src="https://picsum.photos/200" alt="avatar" class="avatar-sm" />
+            <img src="https://picsum.photos/200" alt="avatar" class="avatar-xs" />
+          </div>
+          <div class="item__block component-item--code">
+            <p class="htmltext">HTML</p>
+<pre>
+<code>
+<span>&lt;<span class="tag">img</span> <span class="tag">src</span>="image-source" <span class="tag">alt</span>="avatar" <span class="classtext">class</span>="avatar-xl" /&gt;</span>
+</code>
+</pre>
+          </div>
+        </div>
+<span class="description">class name of avatar of different size - avatar-xl, avatar-lg, avatar-default, avatar-sm, avatar-xm</span>
       </div>
-      <div class="nav">
-        <ul class="nav-list">
-          <li class="nav-component">
-            <h3 class="component">Components</h3>
-            <hr />
+      <div class="component-item">
+        <h2>Alert</h2>
+        <div class="alert">
+          Simple <b>Alert!</b> - check it out!
+          <hr class="alert-hr" />
+          <p>message to user!!</p>
+          <button class="alert__remove--btn">
+            <span>X</span>
+          </button>
+        </div>
+      </div>
+      <div class="component-item">
+        <h2>Badge</h2>
+        <ul class="component-item--list">
+          <li>
+            <h3>Badge on icons</h3>
+            <div class="badge-icon">
+              <i class="fas fa-envelope icon-md"></i>
+              <span class="badge-count--status">7</span>
+            </div>
+            <div class="badge-icon">
+              <i class="fas fa-envelope icon-lg"></i>
+              <span class="badge-count--status">2</span>
+            </div>
           </li>
           <li>
-            <ul class="nav-list__levelOne">
-              <li><a href="#">Avatar</a></li>
-              <li><a href="#">Alert</a></li>
-              <li><a href="#">Badge</a></li>
-              <li><a href="#">Button</a></li>
-              <li><a href="#">Card</a></li>
-              <li><a href="#">Image</a></li>
-              <li><a href="#">Input</a></li>
-              <li><a href="#">Lists</a></li>
-              <li><a href="#">Navigation</a></li>
-              <li><a href="#">Modal</a></li>
-              <li><a href="#">Rating</a></li>
-              <li><a href="#">Slider(NA)</a></li>
-              <li><a href="#">Simplified Grid</a></li>
-              <li><a href="#">Text Utilities</a></li>
-              <li><a href="#">Toast /Snackbar</a></li>
-            </ul>
+            <h3>Badge on avatars</h3>
+            <div class="badge-avatar">
+              <img src="https://picsum.photos/200" alt="Avatar" class="avatar-xl" />
+              <span class="badge-avatar--status online"></span>
+            </div>
+            <div class="badge-avatar">
+              <img src="https://picsum.photos/200" alt="Avatar" class="avatar-xl" />
+              <span class="badge-avatar--status offline"></span>
+            </div>
+            <div class="badge-avatar">
+              <img src="https://picsum.photos/200" alt="Avatar" class="avatar-default" />
+              <span class="badge-avatar--status online"></span>
+            </div>
+            <div class="badge-avatar">
+              <img src="https://picsum.photos/200" alt="Avatar" class="avatar-default" />
+              <span class="badge-avatar--status offline"></span>
+            </div>
           </li>
         </ul>
       </div>
-      <div class="content">
-        <div class="component-item">
-          <h2>Avatar Design</h2>
-          <img src="https://picsum.photos/200" alt="avatar" class="avatar-xl" />
-          <img src="https://picsum.photos/200" alt="avatar" class="avatar-lg" />
-          <img
-            src="https://picsum.photos/200"
-            alt="avatar"
-            class="avatar-default"
-          />
-          <img src="https://picsum.photos/200" alt="avatar" class="avatar-sm" />
-          <img src="https://picsum.photos/200" alt="avatar" class="avatar-xs" />
-        </div>
-        <div class="component-item">
-          <h2>Alert</h2>
-          <div class="alert">
-            Simple <b>Alert!</b> - check it out!
-            <hr class="alert-hr" />
-            <p>message to user!!</p>
-            <button class="alert__remove--btn">
-              <span>X</span>
-            </button>
-          </div>
-        </div>
-        <div class="component-item">
-          <h2>Badge</h2>
-          <ul class="component-item--list">
-            <li>
-              <h3>Badge on icons</h3>
-              <div class="badge-icon">
-                <i class="fas fa-envelope icon-md"></i>
-                <span class="badge-count--status">7</span>
-              </div>
-              <div class="badge-icon">
-                <i class="fas fa-envelope icon-lg"></i>
-                <span class="badge-count--status">2</span>
-              </div>
-            </li>
-            <li>
-              <h3>Badge on avatars</h3>
-              <div class="badge-avatar">
-                <img
-                  src="https://picsum.photos/200"
-                  alt="Avatar"
-                  class="avatar-xl"
-                />
-                <span class="badge-avatar--status online"></span>
-              </div>
-              <div class="badge-avatar">
-                <img
-                  src="https://picsum.photos/200"
-                  alt="Avatar"
-                  class="avatar-xl"
-                />
-                <span class="badge-avatar--status offline"></span>
-              </div>
-              <div class="badge-avatar">
-                <img
-                  src="https://picsum.photos/200"
-                  alt="Avatar"
-                  class="avatar-default"
-                />
-                <span class="badge-avatar--status online"></span>
-              </div>
-              <div class="badge-avatar">
-                <img
-                  src="https://picsum.photos/200"
-                  alt="Avatar"
-                  class="avatar-default"
-                />
-                <span class="badge-avatar--status offline"></span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
+  </div>
 
-    <script src="./main.js" type="text/javascript"></script>
-  </body>
+  <script src="./main.js" type="text/javascript"></script>
+</body>
+
 </html>
