@@ -7,7 +7,7 @@
 }
 
 .content > .component-item {
-  margin-bottom: 10vw;
+  margin-bottom: 7vw;
 }
 
 .content > .component-item h2,
@@ -15,7 +15,44 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
+/* --------code----------- */
+.component-item > .component-item__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.75rem;
+}
+.component-item > .component-item__block > .item__block {
+  margin: 0.5rem;
+}
 
+
+.component-item--code{
+  background-color: var(--codebg);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.05rem;
+  position: relative;
+  box-shadow: inset 0 0 10px var(--second);
+}
+.component-item--code > .htmltext {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: initial;
+}
+.tag  {
+  color: orangered;
+}
+.classtext {
+  color: blue;
+}
+
+.content .component-item .description {
+  font-weight: 500;
+}
 /*----------------Badge-component--------------*/
 .content .component-item--list .badge-icon,
 .content .component-item--list .badge-avatar {
