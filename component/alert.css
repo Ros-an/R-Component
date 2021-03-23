@@ -1,5 +1,5 @@
 .alert {
-  width: 100%;
+  width: 80%;
   padding: 0.75rem 1rem;
   border-radius: 5px;
   border: 1px solid black;
@@ -12,16 +12,7 @@
 }
 .alert__remove--btn {
   position: absolute;
-  right: 0;
-  top: 0;
-  padding: 0.75rem 1rem;
-  background-color: inherit;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-}
-.alert__remove--btn > span:hover,
-.alert__remove--btn > span:active {
-  font-weight: bold;
-  color: rgb(83, 83, 138);
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
 }
