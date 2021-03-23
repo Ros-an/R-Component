@@ -1,0 +1,103 @@
+.cards-block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    /* flex: 1 0 1; */
+
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image .card-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card>.card-content {
+    flex: 1;
+    padding: 0.25rem;
+    background: white;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    border-top: 0;
+}
+
+.card-image>.blue {
+    background: #7F7FFF;
+    color: white;
+}
+
+.card-image>.red {
+    background: #E31B23;
+    color: white;
+}
+
+.card-image .card-badge-new {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+}
+
+.card-image>.light-red {
+    background: rgb(247, 85, 85);
+    color: white;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+    font-weight: bold;
+}
+
+
+.card-badge--remove {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.25rem;
+    color: black;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.outofstock{
+    position: absolute;
+    background: rgba(179, 176, 176,0.4);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.card .card-image .card-badge--remove {
+    z-index: 100;
+}
+.card-image .currently-unavailable {
+    color: rgb(212, 141, 10);
+    background: rgb(255, 250, 250);
+    font-weight: 500;
+    /* font-size: 0.9rem; */
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
