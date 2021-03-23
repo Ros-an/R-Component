@@ -53,15 +53,12 @@
 .nav-list__levelOne > li > a {
   text-decoration: none;
   color: var(--fourth);
-}
-.nav .nav-list__levelOne > li {
-  padding: 0.40rem 1rem;
-  /* font-size: 1.2vw; */
+  display: block;
+    padding: 0.30rem 1rem;
 }
 
-.nav-list__levelOne > li:hover,
-.nav-list__levelOne > li:active,
-.nav-list__levelOne > li:visited {
+.nav-list__levelOne > li > a:hover,
+.nav-list__levelOne > li > a:active {
+  font-weight: 600; 
   background: var(--third);
-  font-weight: 600;
 }
