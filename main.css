@@ -13,6 +13,7 @@
 @import url("component/badge.on.icon.css");
 @import url("component/button.css");
 @import url("component/cards.css");
+@import url("component/responsive.img.css")
 /* ------------------------------------- */
 * {
   box-sizing: border-box;
