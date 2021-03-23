@@ -37,13 +37,12 @@
             <li><a href="#">Image</a></li>
             <li><a href="#">Input</a></li>
             <li><a href="#">Lists</a></li>
-            <li><a href="#">Navigation</a></li>
+            <li><a href="#">Nav bar</a></li>
             <li><a href="#">Modal</a></li>
             <li><a href="#">Rating</a></li>
-            <li><a href="#">Slider(NA)</a></li>
-            <li><a href="#">Simplified Grid</a></li>
-            <li><a href="#">Text Utilities</a></li>
-            <li><a href="#">Toast /Snackbar</a></li>
+            <li><a href="#">Grid</a></li>
+            <li><a href="#">Text</a></li>
+            <li><a href="#">Toast</a></li>
           </ul>
         </li>
       </ul>
@@ -52,7 +51,7 @@
       <div class="component-item">
         <h2>Avatar Design</h2>
         <div class="component-item__block">
-          <div class="item__block">
+          <div class="item__block component-item--avatar">
             <img src="https://picsum.photos/200" alt="avatar" class="avatar-xl" />
             <img src="https://picsum.photos/200" alt="avatar" class="avatar-lg" />
             <img src="https://picsum.photos/200" alt="avatar" class="avatar-default" />
@@ -61,14 +60,18 @@
           </div>
           <div class="item__block component-item--code">
             <p class="htmltext">HTML</p>
-<pre>
 <code>
-<span>&lt;<span class="tag">img</span> <span class="tag">src</span>="image-source" <span class="tag">alt</span>="avatar" <span class="classtext">class</span>="avatar-xl" /&gt;</span>
+<p>&lt;<span class="tag">img</span> <span class="tag">src</span>="image-source" <span class="tag">alt</span>="avatar" <span class="classtext">class</span>="avatar-xl" /&gt;</p>
+
+<p>&lt;<span class="tag">img</span> <span class="tag">src</span>="image-source" <span class="tag">alt</span>="avatar" <span class="classtext">class</span>="avatar-lg" /&gt;</p>
+
+<p>&lt;<span class="tag">img</span> <span class="tag">src</span>="image-source" <span class="tag">alt</span>="avatar" <span class="classtext">class</span>="avatar-default" /&gt;</p>
+<p>&lt;<span class="tag">img</span> <span class="tag">src</span>="image-source" <span class="tag">alt</span>="avatar" <span class="classtext">class</span>="avatar-sm" /&gt;</p>
+
+<p>&lt;<span class="tag">img</span> <span class="tag">src</span>="image-source" <span class="tag">alt</span>="avatar" <span class="classtext">class</span>="avatar-xs" /&gt;</p>
 </code>
-</pre>
           </div>
         </div>
-<span class="description">class name of avatar of different size - avatar-xl, avatar-lg, avatar-default, avatar-sm, avatar-xm</span>
       </div>
       <div class="component-item">
         <h2>Alert</h2>
@@ -76,9 +79,7 @@
           Simple <b>Alert!</b> - check it out!
           <hr class="alert-hr" />
           <p>message to user!!</p>
-          <button class="alert__remove--btn">
-            <span>X</span>
-          </button>
+          <i class="far fa-times-circle alert__remove--btn"></i>
         </div>
       </div>
       <div class="component-item">
@@ -92,7 +93,7 @@
             </div>
             <div class="badge-icon">
               <i class="fas fa-envelope icon-lg"></i>
-              <span class="badge-count--status">2</span>
+              <span class="badge-count--status">99</span>
             </div>
           </li>
           <li>
@@ -113,6 +114,160 @@
               <img src="https://picsum.photos/200" alt="Avatar" class="avatar-default" />
               <span class="badge-avatar--status offline"></span>
             </div>
+          </li>
+        </ul>
+      </div>
+      <div class="component-item">
+        <h2>Buttons</h2>
+        <div class="btn__block">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-dark">Dark</button>
+          <button type="button" class="btn btn-link"><a href="">Link</a> </button>
+        </div>
+
+        <div class="btn__block">
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+          <button type="button" class="btn btn-outline-secondary">Secondary</button>
+          <button type="button" class="btn btn-outline-success">Success</button>
+          <button type="button" class="btn btn-outline-danger">Danger</button>
+          <button type="button" class="btn btn-outline-warning">Warning</button>
+          <button type="button" class="btn btn-outline-info">Info</button>
+          <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+        <div class="btn__block">
+          <button class="clickable-btn">clickable</button>
+        </div>
+        <div class="btn__block">
+          <div class="float-btn">
+            <button class="btn btn-float"><i class="fas fa-plus"></i></button>
+          </div>
+        </div>
+        <div class="btn__block">
+          <button class="btn-icon"><i class="fa fa-home"></i></button>
+          <button class="btn-icon"><i class="fas fa-smile"></i></button>
+          <button class="btn-icon"><i class="fa fa-trash"></i></button>
+          <button class="btn-icon"><i class="fa fa-folder"></i></button>
+        </div>
+
+      </div>
+      <div class="component-item">
+        <h2>Card</h2>
+        <ul>
+          <li>
+            <h3>Cards with badge</h3>
+            <div class="cards-block">
+
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://picsum.photos/250/250?random=1">
+                  <span class="card-badge blue"><i class="fas fa-star"></i> RECOMMENDED</span>
+                </div>
+                <div class="card-content">
+                  <p>Rating</p>
+                  <h4>Product name</h4>
+                  <p>price</p>
+                  <p>little detail</p>
+                </div>
+
+              </div>
+
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://picsum.photos/250/250?random=2">
+                  <span class="card-badge red"><i class="fas fa-heart"></i> BEST SELLER</span>
+                </div>
+                <div class="card-content">
+                  <p>Rating</p>
+                  <h4>Product name</h4>
+                  <p>price</p>
+                  <p>little detail</p>
+                </div>
+
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://picsum.photos/250/250?random=3">
+                  <span class="card-badge-new light-red">NEW</span>
+                </div>
+                <div class="card-content">
+                  <p>Rating</p>
+                  <h4>Product name</h4>
+                  <p>price</p>
+                  <p>little detail</p>
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+          <li>
+            <h3>Cards with dismiss</h3>
+            <div class="cards-block">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./images/25-kasuri-methi-box-catch-whole-original-imafxyf4cwzxyrhq.jpeg">
+                  <span class="card-badge--remove"> <i class="far fa-times-circle"></i></span>
+                </div>
+                <div class="card-content">
+                  <p>Rating</p>
+                  <h4>Product name</h4>
+                  <p>price</p>
+                  <p>little detail</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img src="./images/100-jeera-whole-pouch-catch-whole-original-imafxyf4zffn7vfp.jpeg">
+                  <span class="card-badge--remove"><i class="fas fa-trash-alt"></i></span>
+                </div>
+                <div class="card-content">
+                  <p>Rating</p>
+                  <h4>Product name</h4>
+                  <p>price</p>
+                  <p>little detail</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-image">
+                  <img src="./images/100-100-organic-premium-cinnamon-powder-100-g-cassia-cinnamon-original-imafy9qqcndyg5wg.jpeg">
+                  <div class="outofstock">
+                  </div>
+                  <div class="currently-unavailable">
+                   NOT AVAILABLE
+                  </div>
+                  <span class="card-badge--remove"><i class="far fa-times-circle"></i></span>
+                </div>
+                <div class="card-content">
+                  <p>Rating</p>
+                  <h4>Product name</h4>
+                  <p>price</p>
+                  <p>little detail</p>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+          <li>
+            <h3>Cards with text overlay</h3>
+          </li>
+          <li>
+            <h3>Text only cards</h3>
+          </li>
+          <li>
+            <h3>Vertical Cards</h3>
+          </li>
+          <li>
+            <h3>Horizontal Cards</h3>
+          </li>
+          <li>
+            <h3>Cards with shadow</h3>
           </li>
         </ul>
       </div>
