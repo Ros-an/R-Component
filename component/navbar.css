@@ -95,11 +95,11 @@
         grid-template-rows: 50px 50px;
         font-size: 1rem;
         grid-template-areas: 
-        "lo lo lo se se se se se se"
+        "lo lo se se se se se se se"
         "ho ho ho ab ab ab ln ln ln";
     }
-    .logo {
-        margin: auto auto auto 20px;
+    .search {
+        margin: auto 10px auto auto;
     }
        
 }
