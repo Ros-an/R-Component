@@ -71,8 +71,6 @@
         display: grid;
         grid-template-columns: repeat(11, 1fr);
         grid-template-rows: 65px;
-        color: white;
-        font-weight: 400;
         font-size: 1rem;
         grid-template-areas: 
         "lo se se se se ho ho ab ab ln ln";
@@ -82,12 +80,26 @@
 @media screen and (max-width: 800px) {
     .container-grid {
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        grid-template-rows: 65px;
-        color: white;
-        font-weight: 400;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 55px 55px;
         font-size: 1rem;
         grid-template-areas: 
-        "lo se se se se ho ab ln ln";
+        "lo ho ab ln"
+        "se se se se";
     }
+}
+@media screen and (max-width: 670px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: 50px 50px;
+        font-size: 1rem;
+        grid-template-areas: 
+        "lo lo lo se se se se se se"
+        "ho ho ho ab ab ab ln ln ln";
+    }
+    .logo {
+        margin: auto auto auto 20px;
+    }
+       
 }
