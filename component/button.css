@@ -7,6 +7,7 @@
     text-decoration: none;
     vertical-align: middle;
     cursor: pointer;
+    width: 6.5rem;
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -179,6 +180,7 @@
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+    width: auto;
 }
 
 /* -------icon-button-------- */
@@ -201,6 +203,7 @@
     border: none;
     border-radius: 10px;
     outline: none;
+
     color: #fffafa;
     background-color: rgb(12, 163, 12);
     font-size: 1rem;
@@ -221,8 +224,32 @@
     box-shadow: 0 0.1rem rgba(12,163,12,0.5);
 }
 
+/* --------product-cart------------ */
 
-
+.btn-product {
+    max-width: 12rem;
+    min-width: 10rem;
+    margin: 0 0.25rem 0.25rem 0;
+    padding: 0.75rem 0;
+    font-size: 1.05rem;
+    vertical-align: middle;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    font-family: inherit;
+}
+.cart-btn {
+    background-color: rgb(255, 159, 0);
+}
+.remove-btn {
+    background-color: rgb(255, 23, 23);
+}
+.cart-btn:hover,
+.remove-btn:hover {
+    color: black;
+    cursor: pointer;
+}
 
 
 

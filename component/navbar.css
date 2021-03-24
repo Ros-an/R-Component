@@ -1,0 +1,93 @@
+.container-grid {
+    display: grid;
+    background: rgb(238, 158, 11);
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 70px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.25rem;
+    grid-template-areas: 
+    "lo lo . . se se se se ho ho ab ab ln ln ln";
+}
+
+.logo {
+    grid-area: lo;
+    margin: auto;
+}
+
+.search {
+    grid-area: se;
+    margin: auto;
+}
+
+.home {
+    grid-area: ho;
+    margin: auto;
+}
+
+.about {
+    grid-area: ab;
+    margin: auto;
+}
+
+.login {
+    grid-area: ln;
+    margin: auto;
+}
+
+.search-block{
+    display: inline-block;
+    /* width: fit-content; */
+    margin: auto;
+    position: relative;
+}
+.search-block .navbar-search {
+    outline: none;
+    border: 0;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 1rem 0 0 1rem;
+}
+.search-block .search-btn {
+    outline: none;
+    border: 0;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 0 1rem 1rem 0;
+    
+}
+.search-btn:hover {
+    color: rgba(0,0,0,0.7);
+}
+.pointer-cursor {
+    cursor: pointer;
+}
+.nav-item--effect:hover {
+    color: rgba(104, 11, 11, 0.7);
+}
+@media screen and (max-width: 1040px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: 65px;
+        color: white;
+        font-weight: 400;
+        font-size: 1rem;
+        grid-template-areas: 
+        "lo se se se se ho ho ab ab ln ln";
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: 65px;
+        color: white;
+        font-weight: 400;
+        font-size: 1rem;
+        grid-template-areas: 
+        "lo se se se se ho ab ln ln";
+    }
+}

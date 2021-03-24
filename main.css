@@ -13,6 +13,14 @@
 @import url("component/badge.on.icon.css");
 @import url("component/button.css");
 @import url("component/cards.css");
+@import url("component/responsive.img.css");
+@import url("component/input.css");
+@import url("component/list.css");
+@import url("component/navbar.css");
+@import url("component/modal.css");
+@import url("component/rating.css");
+@import url("component/grid.css");
+@import url("component/toast.css");
 /* ------------------------------------- */
 * {
   box-sizing: border-box;
@@ -39,18 +47,14 @@ body {
   grid-template-rows: 100px auto;
   grid-template-areas:
     "h h h h h h h h h h h h"
-    "n n n c c c c c c c c c";
+    "n n n c c c c c c c c c"
+    "f f f f f f f f f f f f";
 }
 .header {
   grid-area: h;
   background: var(--primary);
   color: var(--second);
   font-family: "Rajdhani", sans-serif;
-  /* position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100px;
-  z-index: 1; */
 }
 
 .nav {
@@ -61,7 +65,33 @@ body {
   grid-area: c;
   background: var(--third);
 }
-
+.footer {
+  grid-area: f;
+  background: var(--primary);
+}
+.fixed a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+.fixed {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  z-index: 100;
+  border: 1px solid rgba(0,0,0,.3);
+  box-shadow: 0 0 5px 5px rgba(48,48,170,0.2);
+}
+.fixed:hover {
+  box-shadow: 0 0 5px 5px rgba(48,48,170,0.4);
+}
 /* --------Media Q small screen----------------- */
 @media screen and (max-width: 670px) {
   .container {
@@ -72,7 +102,8 @@ body {
     grid-template-areas:
       "h h h h h h h h h h h h"
       "n n n n n n n n n n n n"
-      "c c c c c c c c c c c c";
+      "c c c c c c c c c c c c"
+      "f f f f f f f f f f f f";
   }
   .header {
     height: 80px;
