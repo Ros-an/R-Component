@@ -3,25 +3,37 @@
 
 .container > .header {
   display: flex;
-  justify-content: flex-start;
+  position: relative;
+  justify-content: space-between;
   align-items: center;
 }
 .header > .heading {
   font-size: 3rem;
-  padding-left: 1rem;
+  margin: auto 6vw auto auto;
   color: white;
 }
-
-.header > .header-logo{
-  font-size: 1.25rem;
-  margin-left: 1rem;
-  border: 2px solid var(--primary);
-  padding: 0.5rem 0.75rem;
-  border-radius: 50%;
-  color: var(--primary);
-  background: white;
-  box-shadow: 0px 0px 2px 2px white;
+.container > .header .version {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
 }
+.header > .header-logo{
+  font-family: 'Rock Salt', cursive;
+  font-size: 1.25rem;
+  margin: auto auto auto 7vw;
+  color: white;
+}
+.header-logo .level-top {
+  border: 1px solid white;
+  background: white;
+  padding: 0 0.60rem;
+}
+.header-logo .level-mid {
+  padding: 0 0.5rem;
+  background: var(--primary);
+}
+
 .container > .footer {
   color: white;
   display: flex;
@@ -48,7 +60,9 @@
   color: var(--fourth);
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  padding: 1rem 0 0.5rem 0;
   font-size: 1.25rem;
+  /* margin: 0; */
 }
 .nav-component > hr {
   border: 1px solid var(--third);
