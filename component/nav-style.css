@@ -29,7 +29,7 @@
   border: 1px solid var(--third);
   background: var(--third);
   padding: 0 0.60rem;
-  box-shadow: inset 0 0 2px 1px var(--primary);
+  box-shadow: inset 0 0 1px 1px var(--primary);
 }
 .header-logo .level-mid {
   padding: 0 0.5rem;
