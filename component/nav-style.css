@@ -6,6 +6,7 @@
   position: relative;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
 }
 .header > .heading {
   font-size: 3rem;
@@ -43,11 +44,15 @@
   align-content: center;
   font-size: 1.25rem;
   padding: 4rem;
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
 }
 .footer-img {
   padding: 0.2rem;
 }
 /* ----------------------------------------- */
+.nav {
+  box-shadow: 8px 0 6px -6px rgba(0,0,0,0.2);
+}
 .nav .nav-list {
   position: sticky;
   top: 10px; /*header ht size: 100*/ 
