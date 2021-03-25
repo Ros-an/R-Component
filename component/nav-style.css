@@ -9,7 +9,7 @@
 }
 .header > .heading {
   font-size: 3rem;
-  margin: auto 6vw auto auto;
+  margin: auto 4vw auto auto;
   color: white;
 }
 .container > .header .version {
@@ -25,13 +25,15 @@
   color: white;
 }
 .header-logo .level-top {
-  border: 1px solid white;
-  background: white;
+  border: 1px solid var(--third);
+  background: var(--third);
   padding: 0 0.60rem;
+  box-shadow: inset 0 0 2px 1px var(--primary);
 }
 .header-logo .level-mid {
   padding: 0 0.5rem;
   background: var(--primary);
+  /* box-shadow: 0 0 2px 1px var(--third); */
 }
 
 .container > .footer {
