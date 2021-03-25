@@ -1,12 +1,12 @@
 .content {
-  padding: 1rem 1rem 0 2rem;
+  padding: 5vw 1rem 1rem 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
   /* border: 2px solid var(--primary); */
 }
 
 .content>.component-item {
-  margin-top: 5vw;
+  margin-bottom: 5vw;
   border-radius: 5px;
   padding-bottom: 1rem;
   box-shadow: 0 6px 5px 0px rgba(0,0,0,0.2);
