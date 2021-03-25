@@ -6,7 +6,10 @@
 }
 
 .content>.component-item {
-  margin-bottom: 7vw;
+  margin-bottom: 5vw;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
 }
 
 .content>.component-item h2,
